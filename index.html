@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Watch Now</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://i.postimg.cc/RFX0NyZC/1706406758.webp') center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Tombol Play */
+  .play-btn {
+    position: relative;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#ff0066, #ff8c00, #ffe066, #00ffcc, #6a5acd, #ff0066);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    cursor: pointer;
+    animation: spin 3s linear infinite;
+    transition: transform 0.3s ease;
+  }
+
+  @keyframes spin {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+  .play-btn:hover {
+    transform: scale(1.08);
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 26px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    margin-left: 6px;
+  }
+
+  .text {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { color: #fff; text-shadow: 0 0 10px #ff6bcb, 0 0 20px #ff6bcb; }
+    50% { color: #ffe066; text-shadow: 0 0 15px #ffe066, 0 0 25px #ffe066; }
+  }
+
+  /* Slider */
+  .slider-container {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    overflow: hidden;
+    height: 160px;
+    z-index: 1;
+  }
+
+  .slider-track {
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll 30s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .slide {
+    width: 250px;
+    height: 160px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+
+  @media (max-width: 480px) {
+    .slider-container { height: 120px; bottom: 12%; }
+    .slide { width: 180px; height: 120px; margin-right: 12px; }
+    .play-btn { width: 80px; height: 80px; }
+    .triangle { border-left: 20px solid #fff; border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+    .text { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Tombol Play -->
+  <a href="https://referredrender.com/dyu6kzr44?key=703bc4908bfdd21b148e4fe03f9810cb" class="play-btn" aria-label="Watch Now">
+    <div class="triangle"></div>
+  </a>
+  <div class="text">Watch Now</div>
+
+  <!-- Slider Otomatis -->
+  <div class="slider-container">
+    <div class="slider-track">
+      <div class="slide"><img src="https://i.postimg.cc/bvZkMK25/7967026-26946262.gif" alt=""></div>
+      <div class="slide"><img src="https://i.postimg.cc/gjw1y548/12678341.gif" alt=""></div>
+      <div class="slide"><img src="https://i.postimg.cc/sxNss7Hw/m-ldpwiqacxt-E-Ai-mh-Ggb-BHJUODq-Co-KGe-6675801b.gif" alt=""></div>
+      <div class="slide"><img src="https://i.postimg.cc/yYtPY3yf/IMG-20251017-235206.jpg" alt=""></div>
+      <!-- Duplikasi supaya loop mulus -->
+      <div class="slide"><img src="https://i.postimg.cc/bvZkMK25/7967026-26946262.gif" alt=""></div>
+      <div class="slide"><img src="https://i.postimg.cc/gjw1y548/12678341.gif" alt=""></div>
+      <div class="slide"><img src="https://i.postimg.cc/sxNss7Hw/m-ldpwiqacxt-E-Ai-mh-Ggb-BHJUODq-Co-KGe-6675801b.gif" alt=""></div>
+      <div class="slide"><img src="https://i.postimg.cc/yYtPY3yf/IMG-20251017-235206.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <!-- Histats -->
+  <script type="text/javascript">
+    var _Hasync = _Hasync || [];
+    _Hasync.push(['Histats.start', '1,4971851,4,0,0,0,00000000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+      var hs = document.createElement('script');
+      hs.type = 'text/javascript'; hs.async = true;
+      hs.src = ('//s10.histats.com/js15_as.js');
+      (document.head || document.body).appendChild(hs);
+    })();
+  </script>
+  <noscript>
+    <a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4971851&101" alt="hit counter" border="0"></a>
+  </noscript>
+<script type='text/javascript' src='//referredrender.com/93/40/7b/93407ba82bd13c152c864f91fc22e019.js'></script>
+  
+  <script type='text/javascript' src='//referredrender.com/24/80/7a/24807af29054aa09c282aaebed9201af.js'></script>
+</body>
+</html>
